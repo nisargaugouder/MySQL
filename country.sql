@@ -1,3 +1,4 @@
+drop database country;
 CREATE DATABASE IF NOT EXISTS country;
 USE country;
 
@@ -9,7 +10,7 @@ CREATE TABLE country_info (
     area FLOAT
 );
 
-INSERT INTO country_info (country_id, country_name, continent, population, area) VALUES
+INSERT INTO country_info VALUES
 (1, 'United States', 'N America', 3310000, 9833517),
 (2, 'Canada', 'N America', 377454, 9984670),
 (3, 'United Kingdom', 'Europe', 678011, 243610),

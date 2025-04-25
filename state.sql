@@ -1,3 +1,4 @@
+drop database state;
 CREATE DATABASE IF NOT EXISTS state;
 USE state;
 
@@ -9,7 +10,7 @@ CREATE TABLE state_info (
     population INT
 );
 
-INSERT INTO state_info (state_id, state_name, country_id, capital_city, population) VALUES
+INSERT INTO state_info VALUES
 (1, 'Maharashtra', 6, 'Mumbai', 123143),
 (2, 'Uttar Pradesh', 6, 'Lucknow', 1992341),
 (3, 'Bihar', 6, 'Patna', 104452),

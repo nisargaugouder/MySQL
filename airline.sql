@@ -1,3 +1,4 @@
+drop database airline;
 CREATE DATABASE airline;
 USE airline;
 
