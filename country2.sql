@@ -3,7 +3,7 @@ CREATE DATABASE IF NOT EXISTS country;
 USE country;
 
 CREATE TABLE country_info (
-    country_id INT PRIMARY KEY,
+    id INT PRIMARY KEY,
     country_name VARCHAR(100),
     continent VARCHAR(50),
     population INT,

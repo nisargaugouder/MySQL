@@ -68,4 +68,25 @@ update airlines_info set base_country='United Kingdom' where airline_id=12;
 update airlines_info set airline_name = 'SkyWings' where airline_id = 8;
 update airlines_info set ceo_name = 'Amit Taneja' where airline_id = 9;
 
+update airlines_info set ceo_name = 'Amit Taneja' where founded_year not in(2003);
+update airlines_info set airline_name = 'SkyWings' where airline_id in(1,2,5);
+
+
 SELECT * FROM airlines_info;
+
+select * from airlines_info where fleet_size>150;
+select * from airlines_info where airline_id = 5 AND base_country = 'India';
+select * from airlines_info where airline_id = 2 OR airline_id = 3;
+select * from airlines_info where airline_id IN (4, 5, 6);
+select * from  airlines_info where airline_id NOT IN (7, 8);
+select * from airlines_info where airline_id BETWEEN 1 AND 5;
+select * from airlines_info where airline_id NOT BETWEEN 6 AND 10;
+
+delete from airlines_info where airline_id = 1;
+delete from airlines_info where airline_id = 5 AND base_country = 'India';
+delete from airlines_info where airline_id = 2 OR airline_id = 3;
+delete from airlines_info where airline_id IN (4, 5, 6);
+delete from airlines_info where airline_id NOT IN (7, 8);
+delete from airlines_info where airline_id BETWEEN 1 AND 5;
+delete from airlines_info where airline_id NOT BETWEEN 6 AND 10;
+
